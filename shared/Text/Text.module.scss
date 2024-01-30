@@ -1,0 +1,47 @@
+.xs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+
+.xsbold {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.37;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+}
+
+.s {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}
+
+.sbold {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.37;
+  }
+}
+
+.number {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.37;
+  text-transform: uppercase;
+}

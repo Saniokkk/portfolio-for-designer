@@ -1,0 +1,1 @@
+export { isTouchScreen } from "./normalizeDataForSelect";
