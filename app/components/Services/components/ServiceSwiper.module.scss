@@ -1,0 +1,36 @@
+.swiperContainer {
+    overflow: visible;
+    // padding: 0 20px;
+}
+
+.swiperContainer .swiper-slide {
+
+    display: flex;
+    // width: 319px !important;
+    align-self: stretch;
+    height: auto;
+    width: 319px;
+
+    @media screen and (min-width: 768px) {
+        width: 365px;
+    }
+
+    @media screen and (min-width: 1440px) {}
+}
+
+.swiperContainer>div {
+    // width: 100%;
+}
+
+.swiperSlide {
+    display: flex;
+    width: 319px !important;
+    align-self: stretch;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+        // width: 365px !important;
+    }
+
+    @media screen and (min-width: 1440px) {}
+}

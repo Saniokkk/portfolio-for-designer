@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "framer-motion": "^11.0.3",
     "modern-normalize": "^2.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.69.7"
+    "sass": "^1.69.7",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "eslint": "^8",

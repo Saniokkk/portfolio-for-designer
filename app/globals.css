@@ -1,11 +1,13 @@
+@import 'modern-normalize/modern-normalize.css';
+
 :root {
-  --primary: #161313;
+  --primary: #ffffff;
   --accent-color: #fd6129;
   --waring-color: #d54747;
   --title-color: #221f1f;
-  --main-bg: #fffaf4;
+  --main-bg: #010101;
   --secondary-bg: #f8f2eb;
-  --white: #e9e9e9;
+  --white: #FFFFFF;
   --input-border-color: #e4e4e4;
   --active-btn-color: #393939;
   --form-fail-border: 1px solid #d54747;

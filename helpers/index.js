@@ -1,1 +1,1 @@
-export { isTouchScreen } from "./normalizeDataForSelect";
+export { isTouchScreen } from "./isTouchScreen";
