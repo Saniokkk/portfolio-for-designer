@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "./components";
 
-const inter = Inter({ subsets: ["latin"] });
+// import { instrument } from "./fonts";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body
+      // className={instrument.className}
+      >
         <Header />
         <main>{children}</main>
         <Footer />

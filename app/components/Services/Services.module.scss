@@ -1,0 +1,21 @@
+.title {
+    margin-bottom: 50px;
+
+    font-family: "Instrument Serif", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 72px;
+
+        font-size: 70px;
+        line-height: 1.2;
+    }
+
+    @media screen and (min-width: 1440px) {}
+}
