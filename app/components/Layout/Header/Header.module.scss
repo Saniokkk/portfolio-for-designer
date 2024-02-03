@@ -1,5 +1,15 @@
 .header {
-  @media screen and (min-width: 768px) {}
+  margin-top: 40px;
+    @media screen and (min-width: 768px) {
+    }
 
-  @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 1280px) {
+    }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
