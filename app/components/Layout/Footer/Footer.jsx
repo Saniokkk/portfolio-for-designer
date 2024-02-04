@@ -4,10 +4,11 @@ import cn from "classnames";
 
 //components
 import { Container } from "@/shared/Container/Container";
+import { SocialMediaList } from "@/shared";
 
 //styles
 import s from "./Footer.module.scss";
-import { instrumentSerif } from "@/app/fonts";
+import { instrumentSerif, instrumentSans } from "@/app/fonts";
 
 export const Footer = () => {
     return (
@@ -21,9 +22,14 @@ export const Footer = () => {
                 </div>
                 <div className={s.rightSide}>
                     <p className={s.text}>
-                        Life is too short for boring websites - <span className={s.italic}>lets create something special together</span>
+                        Life is too short for boring websites - <span className={s.italic}>let{"'"}s create something special together</span>
                     </p>
+                    <SocialMediaList />
                 </div>
+                <h2 className={s.title}>
+                    Design <span className={s.italic}>Studio</span>
+                </h2>
+                <p className={cn(s.copyright, instrumentSans.className)}>© 2024. Copyright and design Svitlana Lyzanets</p>
             </Container>
         </footer>
     );

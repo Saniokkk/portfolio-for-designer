@@ -1,10 +1,11 @@
 import styles from "./page.module.scss";
-import { Services } from "./components/Services/Services";
+import { Services, Hero } from "./components";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <Services />
-    </main>
-  );
+    return (
+        <main className={styles.main}>
+            <Hero />
+            <Services />
+        </main>
+    );
 }
