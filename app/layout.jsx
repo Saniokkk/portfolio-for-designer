@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         <html lang="en" className={instrumentSans.className}>
             <body>
                 <Header />
-                <main>{children}</main>
+                {children}
                 <Footer />
                 <div id="modal-root" />
             </body>

@@ -7,54 +7,47 @@ import { Icon } from "@/shared";
 
 //styles
 import s from "./SocialMediaList.module.scss";
+import { instrumentSans } from "../../app/fonts";
+
+const data = [
+    {
+        link: "https://www.instagram.com/svitlana_designer__?igsh=MWpnZjF1M2V6dXE2bA==",
+        icon: "instagram",
+        text: "Instagram",
+    },
+    {
+        link: "https://t.me/Svitlana_Lyzanets",
+        icon: "telegram",
+        text: "Telegram",
+    },
+    {
+        link: "https://wa.me/421951336134",
+        icon: "whatsapp",
+        text: "WhatsApp",
+    },
+    {
+        link: "https://www.behance.net/97ba39f6?fbclid=PAAaZK5HhII4Kuwq3wTXzboA3O6WUwFsra-1fLXm8VzdiKkiHRlurV6g9poAg",
+        icon: "behance",
+        text: "Behance",
+    },
+];
 
 export const SocialMediaList = ({ name }) => {
     return (
         <ul className={s.socialMediaList}>
-            <li className={s.socialMediaItem}>
-                <Link
-                    className={cn(s.socialMediaLink, {
-                        [s.socialMediaLinkIcon]: name === "icon",
-                    })}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.instagram.com/svitlana_designer__?igsh=MWpnZjF1M2V6dXE2bA==">
-                    {name === "icon" ? <Icon className={s.socialMediaIcon} width="24" height="24" name="instagram" /> : "Instagram"}
-                </Link>
-            </li>
-            <li className={s.socialMediaItem}>
-                <Link
-                    className={cn(s.socialMediaLink, {
-                        [s.socialMediaLinkIcon]: name === "icon",
-                    })}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://t.me/Svitlana_Lyzanets">
-                    {name === "icon" ? <Icon className={s.socialMediaIcon} width="24" height="24" name="telegram" /> : "Telegram"}
-                </Link>
-            </li>
-            <li className={s.socialMediaItem}>
-                <Link
-                    className={cn(s.socialMediaLink, {
-                        [s.socialMediaLinkIcon]: name === "icon",
-                    })}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://wa.me/421951336134">
-                    {name === "icon" ? <Icon className={s.socialMediaIcon} width="24" height="24" name="whatsapp" /> : "WhatsApp"}
-                </Link>
-            </li>
-            <li className={s.socialMediaItem}>
-                <Link
-                    className={cn(s.socialMediaLink, {
-                        [s.socialMediaLinkIcon]: name === "icon",
-                    })}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.behance.net/97ba39f6?fbclid=PAAaZK5HhII4Kuwq3wTXzboA3O6WUwFsra-1fLXm8VzdiKkiHRlurV6g9poAg">
-                    {name === "icon" ? <Icon className={s.socialMediaIcon} width="24" height="24" name="behance" /> : "Behance"}
-                </Link>
-            </li>
+            {data.map((el, i) => (
+                <li className={s.socialMediaItem} key={i}>
+                    <Link
+                        className={cn(s.socialMediaLink, instrumentSans.className, {
+                            [s.socialMediaLinkIcon]: name === "icon",
+                        })}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={el.link}>
+                        {name === "icon" ? <Icon className={s.socialMediaIcon} width="24" height="24" name={el.icon} /> : el.text}
+                    </Link>
+                </li>
+            ))}
         </ul>
     );
 };

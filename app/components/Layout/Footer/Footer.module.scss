@@ -1,19 +1,52 @@
 .footer {
-    margin-top: 180px;
+    padding-top: 180px;
     width: 100%;
-
+    background-image: url("../../../../public/footer-right-mobile.png"), url("../../../../public/footer-left-mobile.png");
+    background-repeat: no-repeat;
+    background-position:
+        right -50%,
+        left bottom;
     @media screen and (min-width: 768px) {
-    }
 
+        text-align: center;
+        background-image: url("../../../../public/footer-right-tablet.png"), url("../../../../public/footer-left-tablet.png");
+        background-repeat: no-repeat;
+        background-position:
+            right -20%,
+            left bottom;
+    }
     @media screen and (min-width: 1280px) {
+        padding-top: 250px;
+        background-image: url("../../../../public/footer-right-desc.png"), url("../../../../public/footer-left-desc.png");
+        background-repeat: no-repeat;
+        background-position:
+            right -50%,
+            left bottom;
     }
 }
 
 .container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .leftSide {
     margin-bottom: 100px;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+        text-align: start;
+    }
 }
 
 .label {
@@ -35,6 +68,7 @@
 }
 
 .rightSide {
+    margin-bottom: 114px;
 }
 
 .text {
@@ -45,15 +79,48 @@
     line-height: 1.1;
 
     @media screen and (min-width: 768px) {
+        width: 556px;
         font-size: 50px;
         line-height: 1.1;
         text-align: center;
     }
 
     @media screen and (min-width: 1280px) {
+        text-align: start;
     }
 }
 
 .italic {
     font-style: italic;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 95px;
+        line-height: 0.9;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 170px;
+    }
+}
+
+.copyright {
+    width: 100%;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.98;
+    color: var(--copyright);
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+
+    @media screen and (min-width: 1280px) {
+        text-align: start;
+    }
 }

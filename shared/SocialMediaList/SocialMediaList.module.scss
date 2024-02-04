@@ -10,7 +10,12 @@
 }
 
 .socialMediaLink {
-    padding: 32px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.4;
@@ -18,6 +23,20 @@
 
     border: 1px solid #909090;
     border-radius: 100%;
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+        background-color: var(--primary);
+        color: var(--primary-black);
+    }
+    @media screen and (min-width: 768px) {
+        width: 130px;
+        height: 130px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+    }
 }
 
 .socialMediaLinkIcon {

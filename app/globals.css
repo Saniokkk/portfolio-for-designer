@@ -3,16 +3,10 @@
 :root {
   --primary: #ffffff;
   --primary-black: #000;
-  --accent-color: #fd6129;
-  --waring-color: #d54747;
-  --title-color: #221f1f;
+  --copyright: #e1e1e1;
   --main-bg: #010101;
   --secondary-bg: #f8f2eb;
   --white: #FFFFFF;
-  --input-border-color: #e4e4e4;
-  --active-btn-color: #393939;
-  --form-fail-border: 1px solid #d54747;
-  --form-fail-bg: #ffe8e8;
   --scroll-bar-br: 8px;
   --scroll-bar-border: 2px solid #989898;
   --scroll-bar-bg: #f4f4f4;
