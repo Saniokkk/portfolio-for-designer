@@ -1,5 +1,59 @@
 .footer {
-  @media screen and (min-width: 768px) {}
+    margin-top: 180px;
+    width: 100%;
 
-  @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
+}
+
+.container {
+}
+
+.leftSide {
+    margin-bottom: 100px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.email {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.1;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.1;
+    }
+}
+
+.rightSide {
+}
+
+.text {
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+
+    @media screen and (min-width: 768px) {
+        font-size: 50px;
+        line-height: 1.1;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+    }
+}
+
+.italic {
+    font-style: italic;
 }
