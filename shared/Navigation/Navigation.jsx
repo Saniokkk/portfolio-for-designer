@@ -1,104 +1,36 @@
+//library
 import cn from "classnames";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
+//styles
 import s from "./Navigation.module.scss";
-import { Text } from "@/shared/Text/Text";
 
-const homepage = [
-  {
-    name: "About",
-    path: "about",
-  },
-  {
-    name: "New",
-    path: "new",
-  },
-  {
-    name: "Corsets",
-    path: "corsets",
-  },
-  {
-    name: "Dresses",
-    path: "dresses",
-  },
-  {
-    name: "Terms",
-    path: "terms",
-  },
-  {
-    name: "Note",
-    path: "note",
-  },
-  {
-    name: "Order",
-    path: "order",
-  },
-  {
-    name: "Contacts",
-    path: "contacts",
-  },
+//text to navigation element
+const data = [
+    {
+        name: "About me",
+        id: "about",
+    },
+    {
+        name: "Services",
+        id: "services",
+    },
+    {
+        name: "Portfolio",
+        id: "portfolio",
+    },
 ];
 
-const otherPage = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "New",
-    path: "/new",
-  },
-  {
-    name: "Corsets",
-    path: "/corsets",
-  },
-  {
-    name: "Dresses",
-    path: "/dresses",
-  },
-  {
-    name: "Order",
-    path: "#order",
-  },
-  {
-    name: "Contacts",
-    path: "#contacts",
-  },
-];
-
-export const Navigation = ({ className, page }) => {
-  const path = usePathname();
-
-  return (
-    <ul className={cn(s.list, className)}>
-      {page === "home" &&
-        homepage.map((el, i) => (
-          <li key={i} className={cn(s.item)}>
-            <Link
-              href={`#${el.path}`}
-              className={cn(s.link, {
-                [s.active]: path.includes(el.name.toLowerCase()),
-              })}
-            >
-              {el.name}
-            </Link>
-          </li>
-        ))}
-      {page === "other" &&
-        otherPage.map((el, i) => (
-          <li key={i} className={s.item}>
-            <Link
-              href={`${el.path}`}
-              className={cn(s.link, {
-                [s.active]: path.includes(el.name.toLowerCase()),
-              })}
-              size="nav"
-            >
-              {el.name}
-            </Link>
-          </li>
-        ))}
-    </ul>
-  );
+export const Navigation = ({ className }) => {
+    return (
+        <ul className={cn(s.list, className)}>
+            {data.map((el, i) => (
+                <li key={i} className={cn(s.item)}>
+                    <Link href={`#${el.path}`} className={cn(s.link)}>
+                        {el.name}
+                    </Link>
+                </li>
+            ))}
+        </ul>
+    );
 };
