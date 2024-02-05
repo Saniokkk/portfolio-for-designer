@@ -1,7 +1,10 @@
-import { Container, Title } from "@/shared";
-// import { ServiceCard } from './components/ServiceCard';
+import cn from "classnames";
+
+import { Container, Text, Title } from "@/shared";
+import { instrumentSans } from "../../fonts";
 import ServiceSwiper from "./components/ServiceSwiper";
 import s from "./Services.module.scss";
+import Link from "next/link";
 
 const data = [
   {
@@ -22,7 +25,11 @@ const data = [
   },
 ];
 
+const arr = [];
+arr.length = 20;
+
 export const Services = () => {
+  console.log("arr", arr);
   return (
     <section>
       <Container>
@@ -32,10 +39,46 @@ export const Services = () => {
         >
           My services
         </Title>
-        {/* <div className={s.swiperWrap}> */}
-        <ServiceSwiper data={data} />
-        {/* </div> */}
       </Container>
+      <ServiceSwiper data={data} />
+      <Link
+        href={"https://wa.me/421951336134"}
+        className={cn(instrumentSans.className, s.lineWrap)}
+      >
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+        <Text className={cn(instrumentSans.className, s.text)}>
+          Let’s talk websites
+        </Text>
+      </Link>
     </section>
   );
 };
