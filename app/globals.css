@@ -1,12 +1,15 @@
-@import 'modern-normalize/modern-normalize.css';
+@import "modern-normalize/modern-normalize.css";
 
 :root {
   --primary: #ffffff;
   --primary-black: #000;
+  --dark: #171717;
   --copyright: #e1e1e1;
   --main-bg: #010101;
   --secondary-bg: #f8f2eb;
-  --white: #FFFFFF;
+  --white: #ffffff;
+  --grey: #6d6d6d;
+
   --scroll-bar-br: 8px;
   --scroll-bar-border: 2px solid #989898;
   --scroll-bar-bg: #f4f4f4;

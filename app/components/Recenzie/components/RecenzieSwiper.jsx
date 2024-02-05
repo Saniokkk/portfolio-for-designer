@@ -13,28 +13,18 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Mousewheel } from "swiper/modules";
-import { ServiceCard } from "./ServiceCard";
-import s from "./ServiceSwiper.module.scss";
+import { RecenzieCard } from "./RecenzieCard";
+import s from "./RecenzieSwiper.module.scss";
 
-export default function ServiceSwiper({ data }) {
+export default function RecenzieSwiper({ data }) {
   return (
     <>
       <Swiper
         slidesPerView={"auto"}
-        spaceBetween={16}
         mousewheel={{ releaseOnEdges: true }}
+        spaceBetween={16}
         modules={[Mousewheel]}
         className={s.swiperContainer}
-        breakpoints={{
-          // when window width is >= 480px
-          768: {
-            // spaceBetween: 24
-          },
-          // when window width is >= 640px
-          1440: {
-            // slidesPerView: 6,
-          },
-        }}
       >
         {data &&
           data.map((data, index) => {
@@ -44,7 +34,7 @@ export default function ServiceSwiper({ data }) {
                 key={index}
                 className={s.swiperSlide}
               >
-                <ServiceCard
+                <RecenzieCard
                   data={data}
                   index={index}
                 />
