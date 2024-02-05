@@ -15,7 +15,7 @@ export const Footer = () => {
         <footer className={cn(s.footer, instrumentSerif.className)}>
             <Container className={s.container}>
                 <div className={s.leftSide}>
-                    <p class={s.label}>Email:</p>
+                    <p class={s.labelEmail}>Email:</p>
                     <Link className={s.email} href="mailto:svitlana.lizanets@gmail.com">
                         svitlana.lizanets@gmail.com
                     </Link>

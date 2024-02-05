@@ -13,6 +13,11 @@
   --scroll-bar-track-bg: #bbbbbb;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   color: var(--primary);
   font-weight: 400;

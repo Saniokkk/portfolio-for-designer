@@ -1,47 +1,36 @@
-.xs {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.37;
-}
-
-.xsbold {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.37;
-
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.35;
-  }
-}
-
 .s {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.33;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.37;
-  }
-}
-
-.sbold {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.33;
-
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 1.37;
-  }
+    line-height: 1.6;
 }
 
-.number {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.37;
-  text-transform: uppercase;
+.m {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.mSemiBold {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.l {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
 }
