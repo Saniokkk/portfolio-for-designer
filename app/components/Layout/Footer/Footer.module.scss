@@ -15,7 +15,7 @@
             right -20%,
             left bottom;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         padding-top: 250px;
         background-image: url("../../../../public/footer-right-desc.png"), url("../../../../public/footer-left-desc.png");
         background-repeat: no-repeat;
@@ -32,7 +32,7 @@
         align-items: center;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -41,7 +41,7 @@
 
 .leftSide {
     margin-bottom: 100px;
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         display: flex;
         flex-direction: column;
         align-self: start;
@@ -49,7 +49,7 @@
     }
 }
 
-.label {
+.labelEmail {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.1;
@@ -85,7 +85,7 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         text-align: start;
     }
 }
@@ -106,7 +106,7 @@
         line-height: 0.9;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         font-size: 170px;
     }
 }
@@ -120,7 +120,7 @@
     color: var(--copyright);
     border-top: 1px solid rgba(225, 225, 225, 0.5);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1440px) {
         text-align: start;
     }
 }
