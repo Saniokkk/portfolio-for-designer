@@ -1,7 +1,124 @@
 .hero {
-    padding: 124px 0 166px 0;
+    padding: 206px 0 166px 0;
+    height: 1135px;
+    background-image: url("../../../public/hero-bg-mob.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media screen and (min-width: 768px) {
+        padding: 210px 0 180px 0;
+        height: 2260px;
+        background-image: url("../../../public/hero-bg-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 42% 34%;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 290px 0 200px 0;
+        background-image: url("../../../public/hero-bg-desc.png");
+        background-repeat: no-repeat;
+        background-position: center 28%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     margin-bottom: 14px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 49px;
+    }
+}
+
+.innerText {
+    @media screen and (min-width: 768px) {
+        width: 520px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-right: 155px;
+    }
+}
+
+.normalStyle {
+    font-style: normal;
+}
+
+.preTitle {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.button {
+    padding: 16px 24px;
+    border-radius: 32px;
+    border: 1px solid #fff;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.image {
+    display: inline-flex;
+    align-items: center;
+
+    @media screen and (min-width: 1440px) {
+        display: inline;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        margin-left: 10px;
+        width: 65px;
+        height: 65px;
+        border-radius: 65px;
+        background-image: url("../../../public/ellipse.png");
+        background-size: cover;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 20px;
+            width: 121px;
+            height: 121px;
+            border-radius: 121px;
+        }
+        @media screen and (min-width: 1440px) {
+            width: 115px;
+            height: 115px;
+            border-radius: 121px;
+            vertical-align: -20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+.afterTitleBlock {
+    @media screen and (min-width: 1440px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+ul.listSocial {
+    display: none;
+
+    @media screen and (min-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+    }
 }

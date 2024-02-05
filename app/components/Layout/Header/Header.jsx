@@ -18,7 +18,7 @@ export const Header = () => {
                 <Logo />
                 <Navigation className={s.nav} />
                 <CustomLink additional={true} path="/" className={s.headerButton}>
-                    Сontact me
+                    Contact me
                 </CustomLink>
                 <BurgerMenu />
             </Container>

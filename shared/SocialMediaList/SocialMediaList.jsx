@@ -32,9 +32,9 @@ const data = [
     },
 ];
 
-export const SocialMediaList = ({ name }) => {
+export const SocialMediaList = ({ name, className }) => {
     return (
-        <ul className={s.socialMediaList}>
+        <ul className={cn(s.socialMediaList, className)}>
             {data.map((el, i) => (
                 <li className={s.socialMediaItem} key={i}>
                     <Link
