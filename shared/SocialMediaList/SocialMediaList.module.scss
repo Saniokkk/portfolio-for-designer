@@ -19,13 +19,19 @@
 
     border: 1px solid #909090;
     border-radius: 100%;
-    transition: all 250ms linear;
+    transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: var(--primary);
+    stroke: var(--primary);
 
     &:hover,
     &:focus {
         background-color: var(--primary);
         color: var(--primary-black);
+        fill: var(--primary-black);
+        stroke: var(--primary-black);
     }
+
     @media screen and (min-width: 768px) {
         width: 130px;
         height: 130px;
