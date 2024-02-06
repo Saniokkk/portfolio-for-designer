@@ -1,0 +1,41 @@
+.section {
+    padding: 100px 0 70px;
+}
+
+.container {}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    margin-bottom: 120px;
+
+    @media screen and (min-width: 768px) {
+        row-gap: 80px;
+    }
+    @media screen and (min-width: 1440px) {
+        column-gap: 144px;
+    }
+}
+
+.card {}
+
+.description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--white);
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+.accentText {
+    color: var(--grey);
+}

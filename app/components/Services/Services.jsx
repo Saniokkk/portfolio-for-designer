@@ -31,7 +31,7 @@ arr.length = 20;
 export const Services = () => {
   console.log("arr", arr);
   return (
-    <section>
+    <section className={s.section}>
       <Container>
         <Title
           tag="h2"

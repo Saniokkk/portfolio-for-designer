@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Link } from "next/link";
+import Link from "next/link";
 import { Title, Text } from "@/shared";
 import s from "./Card.module.scss";
 
-export const Card = ({ data: { srcImg, name, description } }) => {
+export const Card = ({ data: { id, srcImg, name, description } }) => {
   return (
     <li className={s.item}>
-      <Link className={s.link}>
+      <Link href={`/projects/${id}`} className={s.link}>
         <Image
           className={s.img}
           src={srcImg}
