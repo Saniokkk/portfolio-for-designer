@@ -5,6 +5,7 @@ import s from "./Projects.module.scss";
 import smmImg from "@/public/projects/smme.jpg";
 import techlightImg from "@/public/projects/techlight.jpg";
 import kvitkarniaImg from "@/public/projects/kvitkarnia.jpg";
+import a2b_haulImg from "@/public/projects/a2b_haul.jpg";
 import { instrumentSans } from "@/app/fonts";
 
 const data = [
@@ -22,7 +23,7 @@ const data = [
   },
   {
     id: 3,
-    srcImg: kvitkarniaImg,
+    srcImg: a2b_haulImg,
     name: "A2b haul",
     description: "UI/UX Design, Multipage site",
   },

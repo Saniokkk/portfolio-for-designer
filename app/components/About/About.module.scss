@@ -1,0 +1,108 @@
+.about {
+    margin-top: -166px;
+    padding-bottom: 140px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -1070px;
+        padding-bottom: 180px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: -1200px;
+        padding-bottom: 100px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 18px;
+}
+
+.title {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1440px) {
+    }
+}
+
+.preTitle {
+    margin-bottom: 53px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 100px;
+    }
+}
+
+.image {
+    width: 344px;
+    height: 197px;
+    margin-bottom: 40px;
+    transform: rotate(-11.285deg);
+
+    border-radius: 200px/120px;
+    background-image: url("../../../public/about-mob.png");
+    background-size: cover;
+
+     -moz-border-radius: 200px/120px;
+    -webkit-border-radius: 200px/120px;
+
+    @media screen and (min-width: 768px) {
+        width: 718px;
+        height: 358px;
+        transform: rotate(-12.911deg);
+        margin-bottom: 70px;
+
+        border-radius: 345px/182px;
+        background-image: url("../../../public/about-tablet.png");
+
+        -moz-border-radius: 345px/182px;
+        -webkit-border-radius: 345px/182px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 946px;
+        height: 472px;
+        margin-bottom: 100px;
+        transform: rotate(-12.911deg);
+
+        border-radius: 460px/240px;
+        background-image: url("../../../public/about-desc.png");
+
+        -moz-border-radius: 455px/240px;
+        -webkit-border-radius: 455px/240px;
+    }
+}
+
+.text {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+        width: 541px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        align-self: flex-end;
+        margin-right: 140px;
+    }
+}
+
+.space {
+    display: inline;
+
+     @media screen and (min-width: 768px) {
+        display: block;
+        margin-bottom: 20px;
+    }
+}

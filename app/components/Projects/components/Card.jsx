@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import cn from "classnames";
 import { Title, Text } from "@/shared";
+import { instrumentSans } from "@/app/fonts";
 import s from "./Card.module.scss";
 
 export const Card = ({ data: { id, srcImg, name, description } }) => {
@@ -14,12 +16,12 @@ export const Card = ({ data: { id, srcImg, name, description } }) => {
           width={335}
           height={320}
         />
-        <Title
-          className={s.title}
+        <h3
+          className={cn(instrumentSans.className, s.title)}
           tag={"h3"}
         >
           {name}
-        </Title>
+        </h3>
         <Text className={s.text}>{description}</Text>
       </Link>
     </li>
