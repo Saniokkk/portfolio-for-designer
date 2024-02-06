@@ -1,3 +1,3 @@
-export default function RootLayout({ children }) {
+export default function ProjectsLayout({ children }) {
     return <section>{children}</section>
   }
