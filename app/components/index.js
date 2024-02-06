@@ -1,7 +1,7 @@
-export { Header } from './Layout/Header/Header';
-export { Footer } from './Layout/Footer/Footer';
-export { Services } from './Services/Services';
-export { Hero } from './Hero/Hero';
-export { About } from './About/About';
-export { Recenzie } from './Recenzie/Recenzie';
-
+export { Header } from "./Layout/Header/Header";
+export { Hero } from "./Hero/Hero";
+export { About } from "./About/About";
+export { Projects } from "./Projects/Projects";
+export { Services } from "./Services/Services";
+export { Recenzie } from "./Recenzie/Recenzie";
+export { Footer } from "./Layout/Footer/Footer";
