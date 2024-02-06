@@ -1,23 +1,23 @@
 .hero {
-    padding: 206px 0 166px 0;
+    padding-top: 206px;
     height: 1135px;
     background-image: url("../../../public/hero-bg-mob.png");
     background-repeat: no-repeat;
     background-position: center center;
 
     @media screen and (min-width: 768px) {
-        padding: 210px 0 180px 0;
+        padding-top: 210px;
         height: 2260px;
         background-image: url("../../../public/hero-bg-tablet.png");
         background-repeat: no-repeat;
-        background-position: 42% 34%;
+        background-position: 42% 187%;
     }
 
     @media screen and (min-width: 1440px) {
-        padding: 290px 0 200px 0;
+        padding-top: 290px;
         background-image: url("../../../public/hero-bg-desc.png");
         background-repeat: no-repeat;
-        background-position: center 28%;
+        background-position: center -330%;
     }
 }
 
