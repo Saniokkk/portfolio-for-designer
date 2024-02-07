@@ -1,5 +1,27 @@
 .section {
-    padding: 100px 0 70px;
+    padding: 140px 0;
+    background-image: url(../../../public/projects/bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right 60% ;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -300px;
+        padding: 480px 0;
+        background-image: url(../../../public/projects/bg-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top -300px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 0;
+        padding: 200px 0;
+        background-image: url(../../../public/hero-bg-desc.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 10% top -300px;
+    }
 }
 
 .container {}
@@ -17,6 +39,7 @@
     @media screen and (min-width: 768px) {
         row-gap: 80px;
     }
+
     @media screen and (min-width: 1440px) {
         flex-direction: row;
         flex-wrap: wrap;
@@ -37,6 +60,7 @@ p.description {
     @media screen and (min-width: 768px) {
         font-size: 32px;
     }
+
     @media screen and (min-width: 1440px) {
         font-size: 32px;
         max-width: 928px;
