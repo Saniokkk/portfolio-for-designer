@@ -1,0 +1,17 @@
+.section {}
+
+.container {}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 52px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 72px;
+    }
+}
+
+.innerTitle{
+    font-style: normal;
+}

@@ -1,4 +1,4 @@
-import { Hero } from "./components";
+import { Hero, OtherProjects } from "./components";
 // import heroImgMob from "@/public/projects/hero-mob.jpg";
 // import heroImgTab from "@/public/projects/hero-tablet.jpg";
 import urlImage from "@/public/projects/hero-desk.jpg";
@@ -17,6 +17,7 @@ export default function ProjectPage({ params }) {
     <>
       My Post: {params.id}
       <Hero heroData={heroData}></Hero>
+      <OtherProjects />
     </>
   );
 }
