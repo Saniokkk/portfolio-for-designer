@@ -3,7 +3,7 @@
     background-image: url(../../../public/projects/bg-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center right 60% ;
+    background-position: center right 60%;
 
     @media screen and (min-width: 768px) {
         margin-top: -300px;
@@ -23,8 +23,6 @@
         background-position: right 10% top -300px;
     }
 }
-
-.container {}
 
 .title {
     margin-bottom: 50px;
@@ -47,8 +45,6 @@
         column-gap: 144px;
     }
 }
-
-.card {}
 
 p.description {
     font-weight: 500;
