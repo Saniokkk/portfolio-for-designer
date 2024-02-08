@@ -1,0 +1,129 @@
+.section {
+    padding: 162px 0 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 200px 0 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 274px 0 0;
+    }
+}
+
+.topSideWrapper {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        column-gap: 100px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 70px;
+        column-gap: 442px;
+    }
+
+}
+
+.projectType {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+.year {
+    display: block;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 60px;
+    }
+}
+
+.year::before {
+    content: "";
+    background-image: url(../../../../../public/circle-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 51px;
+        height: 51px;
+    }
+}
+
+.mainTitle {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1440px) {
+        font-style: 140px;
+    }
+}
+
+.image {
+    width: 100%;
+    border-radius: 8px;
+    // max-width: 335px;
+    height: 281px;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+        height: 580px;
+        border-radius: 22px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 100px;
+        height: 750px;
+    }
+}
+
+.wrapAbout {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        column-gap: 100px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        column-gap: 503px;
+    }
+}
+
+.titleAbout {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.textAbout {
+    font-size: 16px;
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        font-style: 18px;
+        max-width: 419px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 560px;
+    }
+}
