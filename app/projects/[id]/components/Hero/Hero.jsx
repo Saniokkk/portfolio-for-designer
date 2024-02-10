@@ -1,7 +1,7 @@
-import { Container, Title } from "@/shared";
 import cn from "classnames";
 import Image from "next/image";
 import { instrumentSerif } from "@/app/fonts";
+import { Container, Title } from "@/shared";
 
 import s from "./Hero.module.scss";
 
