@@ -1,0 +1,166 @@
+.section {
+    padding: 162px 0 70px;
+
+    @media screen and (min-width: 768px) {
+        padding: 200px 0 110px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding: 274px 0 150px;
+    }
+}
+
+.topSideWrapper {
+    margin: 0 auto 70px;
+    padding: 0 20px;
+    max-width: 375px;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 auto 80px;
+        max-width: 768px;
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+        display: flex;
+    }
+
+}
+
+.projectType {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+    }
+}
+
+.year {
+    display: block;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 60px;
+    }
+}
+
+.year::before {
+    content: "";
+    background-image: url(../../../../../public/circle-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 51px;
+        height: 51px;
+    }
+}
+
+.mainTitle {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1440px) {
+        font-style: 140px;
+    }
+}
+
+.image {
+    border-radius: 10px;
+
+    @media screen and (max-width: 767px) {
+        outline: 1px solid grey;
+    }
+
+    &:first-child {
+        width: 296px;
+        height: 218px;
+        margin-bottom: 60px;
+    }
+
+    &:nth-child(2) {
+        width: 284px;
+        height: 253px;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        &:first-child,
+        &:nth-child(2) {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        &:first-child {
+            width: 784px;
+        }
+
+        &:nth-child(2) {
+            width: 656px;
+        }
+    }
+}
+
+.wrapAbout {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        column-gap: 100px;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1440px) {
+        column-gap: 503px;
+    }
+}
+
+.titleAbout {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.textAbout {
+    font-size: 16px;
+    line-height: 1.6;
+
+    @media screen and (min-width: 768px) {
+        font-style: 18px;
+        max-width: 419px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 560px;
+    }
+}
+
+.imagePreview {
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin-top: 140px;
+    @media screen and (min-width: 768px) {
+        margin-top: 180px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 300px;
+    }
+}
