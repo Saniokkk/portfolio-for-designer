@@ -1,8 +1,8 @@
 import { projectData } from "@/data/projectsPage";
-import { Hero, About, OtherProjects } from "./components";
+import { Hero, About, OtherProjects, Result } from "./components";
 
 export default function ProjectPage({ params }) {
-    const { hero, projects, about } = projectData;
+    const { hero, projects, about, result } = projectData;
     const otherProjects = projects.filter((project) => project.id !== Number(params.id));
 
     return (
@@ -10,6 +10,7 @@ export default function ProjectPage({ params }) {
             My Post: {params.id}
             <Hero heroData={hero}></Hero>
             <About data={about} />
+            <Result data={result} />
             <OtherProjects data={otherProjects} />
         </>
     );
