@@ -9,7 +9,7 @@ export default function ProjectPage({ params }) {
         <>
             My Post: {params.id}
             <Hero heroData={hero}></Hero>
-            <About data={about} />
+            <About data={about} mainTitle={hero.mainTitle} />
             <Result data={result} />
             <OtherProjects data={otherProjects} />
         </>

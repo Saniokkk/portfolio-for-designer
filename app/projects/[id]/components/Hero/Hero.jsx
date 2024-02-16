@@ -4,6 +4,7 @@ import { instrumentSerif } from "@/app/fonts";
 import { Container, Title } from "@/shared";
 
 import s from "./Hero.module.scss";
+import { DescriptionSection } from "@/shared/DescriptionSection/DescriptionSection";
 
 export const Hero = ({
   heroData: { mainTitle, year, urlImage, projectType, descriptionAboutCompony },
@@ -30,10 +31,10 @@ export const Hero = ({
           width={1248}
           height={750}
         />
-        <div className={s.wrapAbout}>
-          <p className={s.titleAbout}>About the company</p>
-          <p className={s.textAbout}>{descriptionAboutCompony}</p>
-        </div>
+        <DescriptionSection
+          title={"About the company"}
+          description={descriptionAboutCompony}
+        />
       </Container>
     </section>
   );

@@ -5,17 +5,18 @@ import kvitkarniaImg from "@/public/projects/kvitkarnia.jpg";
 import a2b_haulImg from "@/public/projects/a2b_haul.jpg";
 
 //about
-import firstImgAbout from '@/public/aboutAditionalPage/first-about-desc.png';
-import secondImgAbout from '@/public/aboutAditionalPage/second-about-desc.png';
+import firstImgAbout from "@/public/aboutAditionalPage/first-about-desc.png";
+import secondImgAbout from "@/public/aboutAditionalPage/second-about-desc.png";
+import thirdImgAbout from "@/public/aboutAditionalPage/preview-large.jpg";
+import forthImgAbout from "@/public/aboutAditionalPage/preview-small.jpg";
 
 // import heroImgMob from "@/public/projects/hero-mob.jpg";
 // import heroImgTab from "@/public/projects/hero-tablet.jpg";
 
 //result
-import firstImgResult from "@/public/projects/result/tab-1.jpg"
-import secondImgResult from "@/public/projects/result/tab-2.jpg"
-import previewImgResult from "@/public/projects/result/preview-project.jpg"
-
+import firstImgResult from "@/public/projects/result/tab-1.jpg";
+import secondImgResult from "@/public/projects/result/tab-2.jpg";
+import previewImgResult from "@/public/projects/result/preview-project.jpg";
 
 export const projectData = {
   hero: {
@@ -28,13 +29,14 @@ export const projectData = {
   },
   about: {
     description: `My task was to create a modern website that reflects the company's values and provides convenient access to information.To familiarize users with the company's services, demonstrate their work and present the product range. The new site was to serve as an effective tool for interaction, offering a comprehensive view of the company's capabilities and emphasizing its professionalism.`,
-    images: [firstImgAbout, secondImgAbout]
+    images: [firstImgAbout, secondImgAbout, thirdImgAbout, forthImgAbout],
   },
   result: {
     firstImgResult,
     secondImgResult,
     previewImgResult,
-    description : "This is a modern and innovative website for marketing experts. During the development process, we conducted a thorough analysis of competitors and implemented the right process to create an attractive and effective online resource. We focused on typography to give the site a modern and professional look. Each element was carefully selected to reflect the style and uniqueness of the brand. We provided a detailed description of all the services offered by the experts. Each service has its own section with a clear description, benefits, and features. The site has a portfolio section that presents real projects completed by the company, which clearly demonstrate their experience and achievements. The products offered by the company are presented with a special emphasis on the visual aspect. Each product is accompanied by high-quality photos and detailed descriptions.",
+    description:
+      "This is a modern and innovative website for marketing experts. During the development process, we conducted a thorough analysis of competitors and implemented the right process to create an attractive and effective online resource. We focused on typography to give the site a modern and professional look. Each element was carefully selected to reflect the style and uniqueness of the brand. We provided a detailed description of all the services offered by the experts. Each service has its own section with a clear description, benefits, and features. The site has a portfolio section that presents real projects completed by the company, which clearly demonstrate their experience and achievements. The products offered by the company are presented with a special emphasis on the visual aspect. Each product is accompanied by high-quality photos and detailed descriptions.",
   },
   projects: [
     {

@@ -4,9 +4,10 @@ import Image from "next/image";
 import { Container } from "@/shared";
 
 import s from "./Result.module.scss";
+import { DescriptionSection } from "@/shared/DescriptionSection/DescriptionSection";
 
 export const Result = ({
-    data: { firstImgResult, secondImgResult, description, previewImgResult },
+  data: { firstImgResult, secondImgResult, description, previewImgResult },
 }) => {
   return (
     <section className={s.section}>
@@ -27,10 +28,10 @@ export const Result = ({
         />
       </div>
       <Container>
-        <div className={s.wrapAbout}>
-          <h2 className={s.titleAbout}>Result</h2>
-          <p className={s.textAbout}>{description}</p>
-        </div>
+        <DescriptionSection
+          title={"Result"}
+          description={description}
+        />
       </Container>
       <Image
         className={s.imagePreview}

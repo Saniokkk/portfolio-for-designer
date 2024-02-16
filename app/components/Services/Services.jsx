@@ -40,6 +40,7 @@ export const Services = () => {
           My services
         </Title>
       </Container>
+      {/* <Container className={s.swiperContainer}> */}
       <ServiceSwiper data={data} />
       <Link
         href={"https://wa.me/421951336134"}
@@ -79,6 +80,7 @@ export const Services = () => {
           Let’s talk websites
         </Text>
       </Link>
+      {/* </Container> */}
     </section>
   );
 };
