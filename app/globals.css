@@ -21,10 +21,15 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--primary);
   font-weight: 400;
   background: var(--main-bg);
+  /* overflow-x: hidden; */
 }
 
 a {

@@ -95,35 +95,3 @@
         height: 750px;
     }
 }
-
-.wrapAbout {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        column-gap: 100px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        column-gap: 503px;
-    }
-}
-
-.titleAbout {
-    margin-bottom: 18px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-.textAbout {
-    font-size: 16px;
-    line-height: 1.6;
-
-    @media screen and (min-width: 768px) {
-        font-style: 18px;
-        max-width: 419px;
-    }
-
-    @media screen and (min-width: 1440px) {
-        max-width: 560px;
-    }
-}
