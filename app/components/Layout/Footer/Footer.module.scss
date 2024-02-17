@@ -16,11 +16,13 @@
             left bottom;
     }
     @media screen and (min-width: 1440px) {
-        padding-top: 250px;
+         scroll-margin-block-start: -600px;
+        margin-top: -400px;
+        padding-top: 650px;
         background-image: url("../../../../public/footer-right-desc.png"), url("../../../../public/footer-left-desc.png");
         background-repeat: no-repeat;
         background-position:
-            right -50%,
+            right 60%,
             left bottom;
     }
 }
@@ -68,7 +70,7 @@
 }
 
 .rightSide {
-    margin-bottom: 114px;
+    margin-bottom: 150px;
 }
 
 .text {

@@ -29,58 +29,29 @@ const arr = [];
 arr.length = 20;
 
 export const Services = () => {
-  console.log("arr", arr);
-  return (
-    <section className={s.section}>
-      <Container>
-        <Title
-          tag="h2"
-          className={s.title}
-        >
-          My services
-        </Title>
-      </Container>
-      {/* <Container className={s.swiperContainer}> */}
-      <ServiceSwiper data={data} />
-      <Link
-        href={"https://wa.me/421951336134"}
-        className={cn(instrumentSans.className, s.lineWrap)}
-      >
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-        <Text className={cn(instrumentSans.className, s.text)}>
-          Let’s talk websites
-        </Text>
-      </Link>
-      {/* </Container> */}
-    </section>
-  );
+    return (
+        <section className={s.section} id="services">
+            <Container>
+                <Title tag="h2" className={s.title}>
+                    My services
+                </Title>
+            </Container>
+            {/* <Container className={s.swiperContainer}> */}
+            <ServiceSwiper data={data} />
+            <Link href={"https://wa.me/421951336134"} className={cn(instrumentSans.className, s.lineWrap)}>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+                <Text className={cn(instrumentSans.className, s.text)}>Let’s talk websites</Text>
+            </Link>
+            {/* </Container> */}
+        </section>
+    );
 };

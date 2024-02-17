@@ -12,7 +12,7 @@ import { instrumentSerif, instrumentSans } from "@/app/fonts";
 
 export const Footer = () => {
     return (
-        <footer className={cn(s.footer, instrumentSerif.className)}>
+        <footer className={cn(s.footer, instrumentSerif.className)} id="contacts">
             <Container className={s.container}>
                 <div className={s.leftSide}>
                     <p className={s.labelEmail}>Email:</p>

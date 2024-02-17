@@ -17,7 +17,7 @@ export const Header = () => {
             <Container className={s.container}>
                 <Logo />
                 <Navigation className={s.nav} />
-                <CustomLink additional={true} path="/" className={s.headerButton}>
+                <CustomLink additional={true} path="#contacts" className={s.headerButton}>
                     Contact me
                 </CustomLink>
                 <BurgerMenu />

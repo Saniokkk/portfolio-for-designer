@@ -7,7 +7,7 @@ export default function ProjectPage({ params }) {
 
     return (
         <>
-            My Post: {params.id}
+            {/* My Post: {params.id} */}
             <Hero heroData={hero}></Hero>
             <About data={about} mainTitle={hero.mainTitle} />
             <Result data={result} />

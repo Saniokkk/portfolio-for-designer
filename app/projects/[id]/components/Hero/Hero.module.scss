@@ -1,12 +1,19 @@
 .section {
     padding: 162px 0 70px;
+    background-image: url("../../../../../public/dynamicPage/hero-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 22% 360%;
 
     @media screen and (min-width: 768px) {
         padding: 200px 0 110px;
+        background-image: url("../../../../../public/dynamicPage/hero-bg-tablet.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
+        background-position: 9% 127%, 10000% 50%;
     }
 
     @media screen and (min-width: 1440px) {
         padding: 274px 0 150px;
+        background-image: url("../../../../../public/dynamicPage/hero-bg-desk.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
+        background-position: -4% 109%;
     }
 }
 
@@ -25,7 +32,6 @@
         margin-bottom: 70px;
         column-gap: 442px;
     }
-
 }
 
 .projectType {
