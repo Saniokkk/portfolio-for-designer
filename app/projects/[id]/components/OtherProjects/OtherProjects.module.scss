@@ -1,8 +1,24 @@
 .section {
     padding: auto;
-}
 
-.container {}
+    background-image: url("../../../../../public/dynamicPage/project-bg-top-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: center -194px;
+    padding-top: 400px;
+    margin-top: -420px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../../../../../public/dynamicPage/project-bg-top-tablet.webp");
+        background-position: center -35%;
+        padding-top: 1200px;
+        margin-top: -1150px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        background-image: url("../../../../../public/dynamicPage/project-bg-top-desk.webp");
+        background-position: 700px 75%
+    }
+}
 
 .title {
     margin-bottom: 50px;
@@ -10,10 +26,15 @@
     line-height: 1.2;
 
     @media screen and (min-width: 768px) {
+        font-size: 100px;
         margin-bottom: 72px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 120px;
     }
 }
 
-.innerTitle{
+.innerTitle {
     font-style: normal;
 }

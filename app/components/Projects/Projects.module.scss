@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right 60%;
+    scroll-margin-block-start: -100px;
+
 
     @media screen and (min-width: 768px) {
         margin-top: -300px;
@@ -12,6 +14,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top -300px;
+        scroll-margin-block-start: -450px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -21,6 +24,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right 10% top -300px;
+        scroll-margin-block-start: -180px;
     }
 }
 

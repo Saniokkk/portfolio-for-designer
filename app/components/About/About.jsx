@@ -9,7 +9,7 @@ import s from "./About.module.scss";
 
 export const About = () => {
     return (
-        <section className={s.about}>
+        <section className={s.about} id="about">
             <Container className={s.container}>
                 <Title tag="h2-large" className={s.title}>
                     my name is
