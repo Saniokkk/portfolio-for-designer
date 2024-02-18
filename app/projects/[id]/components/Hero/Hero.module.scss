@@ -7,13 +7,13 @@
     @media screen and (min-width: 768px) {
         padding: 200px 0 110px;
         background-image: url("../../../../../public/dynamicPage/hero-bg-tablet.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
-        background-position: 9% 127%, 10000% 50%;
+        background-position: 9% 127%, -550px center;
     }
 
     @media screen and (min-width: 1440px) {
         padding: 274px 0 150px;
         background-image: url("../../../../../public/dynamicPage/hero-bg-desk.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
-        background-position: -4% 109%;
+        background-position: -4% 109%, -75% 15%;
     }
 }
 

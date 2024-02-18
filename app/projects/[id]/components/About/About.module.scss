@@ -1,12 +1,19 @@
 .about {
     padding: 162px 0 70px;
+    background-image: url("../../../../../public/dynamicPage/about-bg-mobile-top.webp"), url("../../../../../public/dynamicPage/about-bg-mobile-bottom.webp");
+    background-repeat: no-repeat;
+           background-position: 25% 35%, center 120%;
 
     @media screen and (min-width: 768px) {
         padding: 200px 0 110px;
+        background-image: url("../../../../../public/dynamicPage/about-bg-tablet-top.webp"), url("../../../../../public/dynamicPage/about-bg-tablet-bottom.webp");
+        background-position: 18% 40%, 65% 111%;
     }
 
     @media screen and (min-width: 1440px) {
         padding: 274px 0 150px;
+        background-image: url("../../../../../public/dynamicPage/about-bg-desk-top.webp"), url("../../../../../public/dynamicPage/about-bg-desk-bottom.webp");
+        background-position: 14% 17%, 110% 115%;
     }
 }
 
@@ -25,9 +32,7 @@
         max-width: 1440px;
         display: flex;
     }
-
 }
-
 
 .image {
     border-radius: 10px;
@@ -49,7 +54,6 @@
     }
 
     @media screen and (min-width: 768px) {
-
         &:first-child,
         &:nth-child(2) {
             width: 100%;
@@ -121,7 +125,6 @@
     // flex-wrap: nowrap;
 
     @media screen and (min-width: 768px) {
-
         top: 111px;
         left: -356px;
         font-size: 150px;
@@ -135,7 +138,7 @@
 }
 
 .imagePreview {
-    width: calc((100% - 15px) /2);
+    width: calc((100% - 15px) / 2);
     // height: auto;
     border-radius: 20px;
 
