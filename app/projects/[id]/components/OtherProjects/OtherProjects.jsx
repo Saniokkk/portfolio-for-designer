@@ -1,9 +1,9 @@
 import cn from "classnames";
 import s from "./OtherProjects.module.scss";
-import smmImg from "@/public/projects/smme.jpg";
-import techlightImg from "@/public/projects/techlight.jpg";
-import kvitkarniaImg from "@/public/projects/kvitkarnia.jpg";
-import a2b_haulImg from "@/public/projects/a2b_haul.jpg";
+import smmImg from "@/public/projects/smme.webp";
+import techlightImg from "@/public/projects/techlight.webp";
+import kvitkarniaImg from "@/public/projects/kvitkarnia.webp";
+import a2b_haulImg from "@/public/projects/a2b_haul.webp";
 import { instrumentSans } from "@/app/fonts";
 import { CardProject } from "./components/CardProject";
 import { Container, Title, Text } from "@/shared";

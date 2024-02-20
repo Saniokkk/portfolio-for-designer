@@ -1,7 +1,7 @@
 .footer {
     padding-top: 180px;
     width: 100%;
-    background-image: url("../../../../public/footer-right-mobile.png"), url("../../../../public/footer-left-mobile.png");
+    background-image: url("../../../../public/footer-right-mobile.webp"), url("../../../../public/footer-left-mobile.webp");
     background-repeat: no-repeat;
     background-position:
         right -50%,
@@ -9,7 +9,7 @@
     @media screen and (min-width: 768px) {
 
         text-align: center;
-        background-image: url("../../../../public/footer-right-tablet.png"), url("../../../../public/footer-left-tablet.png");
+        background-image: url("../../../../public/footer-right-tablet.webp"), url("../../../../public/footer-left-tablet.webp");
         background-repeat: no-repeat;
         background-position:
             right -20%,
@@ -19,7 +19,7 @@
          scroll-margin-block-start: -600px;
         margin-top: -400px;
         padding-top: 650px;
-        background-image: url("../../../../public/footer-right-desc.png"), url("../../../../public/footer-left-desc.png");
+        background-image: url("../../../../public/footer-right-desc.webp"), url("../../../../public/footer-left-desc.webp");
         background-repeat: no-repeat;
         background-position:
             right 60%,

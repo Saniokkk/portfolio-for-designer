@@ -1,18 +1,18 @@
 .section {
     padding: 162px 0 70px;
-    background-image: url("../../../../../public/dynamicPage/hero-bg-mobile.png");
+    background-image: url("../../../../../public/dynamicPage/hero-bg-mobile.webp");
     background-repeat: no-repeat;
     background-position: 22% 360%;
 
     @media screen and (min-width: 768px) {
         padding: 200px 0 110px;
-        background-image: url("../../../../../public/dynamicPage/hero-bg-tablet.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
+        background-image: url("../../../../../public/dynamicPage/hero-bg-tablet.webp"), url("../../../../../public/dynamicPage/hero-ellipse.webp");
         background-position: 9% 127%, -550px center;
     }
 
     @media screen and (min-width: 1440px) {
         padding: 274px 0 150px;
-        background-image: url("../../../../../public/dynamicPage/hero-bg-desk.png"), url("../../../../../public/dynamicPage/hero-ellipse.png");
+        background-image: url("../../../../../public/dynamicPage/hero-bg-desk.webp"), url("../../../../../public/dynamicPage/hero-ellipse.webp");
         background-position: -4% 109%, -75% 15%;
     }
 }
@@ -59,7 +59,7 @@
 
 .year::before {
     content: "";
-    background-image: url(../../../../../public/circle-gradient.png);
+    background-image: url(../../../../../public/circle-gradient.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -89,6 +89,7 @@
     // max-width: 335px;
     height: 281px;
     margin-bottom: 70px;
+    object-fit: cover;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 80px;

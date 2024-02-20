@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Text, Title } from "@/shared";
-import logo from "@/public/circle-gradient.png";
+import logo from "@/public/circle-gradient.webp";
 import s from "./ServiceCard.module.scss";
 
 export const ServiceCard = ({

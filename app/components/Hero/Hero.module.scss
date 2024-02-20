@@ -1,21 +1,21 @@
 .hero {
     padding-top: 206px;
     height: 1135px;
-    background-image: url("../../../public/hero-bg-mob.png");
+    background-image: url("../../../public/hero-bg-mob.webp");
     background-repeat: no-repeat;
     background-position: center center;
 
     @media screen and (min-width: 768px) {
         padding-top: 210px;
         height: 2260px;
-        background-image: url("../../../public/hero-bg-tablet.png");
+        background-image: url("../../../public/hero-bg-tablet.webp");
         background-repeat: no-repeat;
         background-position: 42% 187%;
     }
 
     @media screen and (min-width: 1440px) {
         padding-top: 290px;
-        background-image: url("../../../public/hero-bg-desc.png");
+        background-image: url("../../../public/hero-bg-desc.webp");
         background-repeat: no-repeat;
         background-position: center -330%;
     }
@@ -87,7 +87,7 @@
         width: 65px;
         height: 65px;
         border-radius: 65px;
-        background-image: url("../../../public/ellipse.png");
+        background-image: url("../../../public/ellipse.webp");
         background-size: cover;
 
         @media screen and (min-width: 768px) {

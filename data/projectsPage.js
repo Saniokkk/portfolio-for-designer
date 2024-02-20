@@ -1,22 +1,22 @@
-import urlImage from "@/public/projects/hero-desk.jpg";
-import smmImg from "@/public/projects/smme.jpg";
-import techlightImg from "@/public/projects/techlight.jpg";
-import kvitkarniaImg from "@/public/projects/kvitkarnia.jpg";
-import a2b_haulImg from "@/public/projects/a2b_haul.jpg";
+import urlImage from "@/public/projects/hero-desktop.webp";
+import smmImg from "@/public/projects/smme.webp";
+import techlightImg from "@/public/projects/techlight.webp";
+import kvitkarniaImg from "@/public/projects/kvitkarnia.webp";
+import a2b_haulImg from "@/public/projects/a2b_haul.webp";
 
 //about
-import firstImgAbout from "@/public/aboutAditionalPage/first-about-desc.png";
-import secondImgAbout from "@/public/aboutAditionalPage/second-about-desc.png";
-import thirdImgAbout from "@/public/aboutAditionalPage/preview-large.jpg";
-import forthImgAbout from "@/public/aboutAditionalPage/preview-small.jpg";
+import firstImgAbout from "@/public/aboutAditionalPage/first-about-desc.webp";
+import secondImgAbout from "@/public/aboutAditionalPage/second-about-desc.webp";
+import thirdImgAbout from "@/public/aboutAditionalPage/preview-large.webp";
+import forthImgAbout from "@/public/aboutAditionalPage/preview-small.webp";
 
-// import heroImgMob from "@/public/projects/hero-mob.jpg";
-// import heroImgTab from "@/public/projects/hero-tablet.jpg";
+// import heroImgMob from "@/public/projects/hero-mob.webp";
+// import heroImgTab from "@/public/projects/hero-tablet.webp";
 
 //result
-import firstImgResult from "@/public/projects/result/tab-1.jpg";
-import secondImgResult from "@/public/projects/result/tab-2.jpg";
-import previewImgResult from "@/public/projects/result/preview-project.jpg";
+import firstImgResult from "@/public/projects/result/tab-1.webp";
+import secondImgResult from "@/public/projects/result/tab-2.webp";
+import previewImgResult from "@/public/projects/result/preview-project.webp";
 
 export const projectData = {
   hero: {
