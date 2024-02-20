@@ -1,7 +1,7 @@
 import { Container, Text, Title } from "@/shared";
-import logoKutelmakh from "@/public/Oksana-Kutelmakh.png";
-import logoKondratyuk from "@/public/Natalia-Kondratyuk.png";
-import logoBodnar from "@/public/Yulia-Bodnar.png";
+import logoKutelmakh from "@/public/Oksana-Kutelmakh.webp";
+import logoKondratyuk from "@/public/Natalia-Kondratyuk.webp";
+import logoBodnar from "@/public/Yulia-Bodnar.webp";
 import RecenzieSwiper from "./components/RecenzieSwiper";
 import s from "./Recenzie.module.scss";
 
