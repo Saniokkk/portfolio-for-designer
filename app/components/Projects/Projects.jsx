@@ -1,11 +1,11 @@
 import cn from "classnames";
 import s from "./Projects.module.scss";
 import { Card } from "./components/Card";
-import { projectData } from "@/data/projectsPage";
+import { projects } from "@/data/projectsPage";
 import { instrumentSans } from "@/app/fonts";
 import { Container, Title, Text } from "@/shared";
 
-const { projects } = projectData;
+// const { projects } = projectData;
 
 export const Projects = () => {
     return (
