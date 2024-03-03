@@ -11,6 +11,12 @@
     }
 }
 
+.center {
+    &>div {
+        justify-content: center !important;
+    }
+}
+
 .swiperSlide {
     display: flex;
     width: 319px;

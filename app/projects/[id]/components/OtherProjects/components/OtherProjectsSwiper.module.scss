@@ -11,10 +11,11 @@
     }
 }
 
-
-// .swiperContainer>div {
-//     width: 100%;
-// }
+.center {
+    &>div {
+        justify-content: center !important;
+    }
+}
 
 .swiperSlide {
     display: flex;
