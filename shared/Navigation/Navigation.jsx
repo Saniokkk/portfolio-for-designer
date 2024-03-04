@@ -26,7 +26,7 @@ export const Navigation = ({ className }) => {
         <ul className={cn(s.list, className)}>
             {data.map((el, i) => (
                 <li key={i} className={cn(s.item)}>
-                    <Link href={`#${el.id}`} className={cn(s.link)}>
+                    <Link href={`/#${el.id}`} className={cn(s.link)}>
                         {el.name}
                     </Link>
                 </li>

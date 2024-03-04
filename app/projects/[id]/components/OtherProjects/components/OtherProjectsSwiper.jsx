@@ -1,8 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import cn from "classnames";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,25 +14,39 @@ import "swiper/css/pagination";
 // import "./styles.css";
 
 // import required modules
-import { Mousewheel } from "swiper/modules";
 import { CardProject } from "./CardProject";
+import { checkSliderIsCenter } from "@/helpers/checkSliderIsCenter";
+
 import s from "./OtherProjectsSwiper.module.scss";
 
 export default function OtherProjectsSwiper({ data }) {
+  const pageWidth = window?.innerWidth;
+  const [sliderIsCenter, setSliderIsCenter] = useState(
+    pageWidth >= 1440 ? true : false
+  );
+  const swiperContainerRef = useRef(null);
+  function handleOverflowSlider() {
+    checkSliderIsCenter(swiperContainerRef, setSliderIsCenter);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleOverflowSlider);
+    handleOverflowSlider();
+    return () => window.removeEventListener("resize", handleOverflowSlider);
+  }, []);
   return (
     <>
       <Swiper
+        ref={swiperContainerRef}
         slidesPerView={"auto"}
         spaceBetween={16}
         mousewheel={{ releaseOnEdges: true }}
         modules={[Mousewheel]}
-        className={s.swiperContainer}
+        className={cn(s.swiperContainer, { [s.center]: sliderIsCenter })}
         breakpoints={{
-          // when window width is >= 480px
           768: {
             spaceBetween: 20,
           },
-          // when window width is >= 640px
           1440: {
             spaceBetween: 40,
           },
