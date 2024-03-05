@@ -1,5 +1,5 @@
-export const checkSliderIsCenter = (refElement, setState) => {
-  const pageWidth = window.innerWidth;
+export const checkSliderIsCenter = (refElement, setState, mainContainerSwiper) => {
+  const pageWidth = mainContainerSwiper.innerWidth;
   const swiperContainerElement = refElement.current;
 
   if (swiperContainerElement) {

@@ -20,13 +20,14 @@ import { checkSliderIsCenter } from "@/helpers/checkSliderIsCenter";
 import s from "./RecenzieSwiper.module.scss";
 
 export default function RecenzieSwiper({ data }) {
-  const pageWidth = window?.innerWidth;
-  const [sliderIsCenter, setSliderIsCenter] = useState(
-    pageWidth >= 1440 ? true : false
-  );
+  const [sliderIsCenter, setSliderIsCenter] = useState(true);
   const swiperContainerRef = useRef(null);
   function handleOverflowSlider() {
-    checkSliderIsCenter(swiperContainerRef, setSliderIsCenter);
+    checkSliderIsCenter(
+      swiperContainerRef,
+      setSliderIsCenter,
+      swiperContainerRef.current
+    );
   }
 
   useEffect(() => {
@@ -36,6 +37,7 @@ export default function RecenzieSwiper({ data }) {
   }, []);
   return (
     <>
+      (
       <Swiper
         ref={swiperContainerRef}
         slidesPerView={"auto"}
@@ -60,6 +62,7 @@ export default function RecenzieSwiper({ data }) {
             );
           })}
       </Swiper>
+      )
     </>
   );
 }
