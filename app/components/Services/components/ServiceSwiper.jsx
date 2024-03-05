@@ -19,13 +19,10 @@ import { checkSliderIsCenter } from "@/helpers/checkSliderIsCenter";
 import s from "./ServiceSwiper.module.scss";
 
 export default function ServiceSwiper({ data }) {
-  const pageWidth = window?.innerWidth;
-  const [sliderIsCenter, setSliderIsCenter] = useState(
-    pageWidth >= 1440 ? true : false
-  );
+  const [sliderIsCenter, setSliderIsCenter] = useState(true);
   const swiperContainerRef = useRef(null);
   function handleOverflowSlider() {
-    checkSliderIsCenter(swiperContainerRef, setSliderIsCenter);
+    checkSliderIsCenter(swiperContainerRef, setSliderIsCenter, swiperContainerRef.current);
   }
 
   useEffect(() => {
