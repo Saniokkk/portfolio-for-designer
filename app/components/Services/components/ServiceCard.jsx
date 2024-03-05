@@ -9,12 +9,10 @@ export const ServiceCard = ({
 }) => {
   const quantityIcons = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
   quantityIcons.length = index ? index + 1 : 1;
-  console.log(quantityIcons);
   return (
     <div className={s.item}>
       <div className={s.iconsWrap}>
         {quantityIcons.map((_, i) => {
-          console.log(i);
           return (
             <Image
               key={i}
