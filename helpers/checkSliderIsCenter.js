@@ -1,5 +1,9 @@
-export const checkSliderIsCenter = (refElement, setState, mainContainerSwiper) => {
-  const pageWidth = mainContainerSwiper.innerWidth;
+export const checkSliderIsCenter = (
+  refElement,
+  setState,
+  mainContainerSwiper
+) => {
+  const pageWidth = window.innerWidth;
   const swiperContainerElement = refElement.current;
 
   if (swiperContainerElement) {
@@ -9,7 +13,9 @@ export const checkSliderIsCenter = (refElement, setState, mainContainerSwiper) =
     const marginRightCard = parseInt(getComputedStyle(card).marginRight);
 
     const totalWidthAllCards =
-      cardWidth * numberOfCards + marginRightCard * numberOfCards;
+      cardWidth * numberOfCards + marginRightCard * numberOfCards - 1;
+    console.log("pageWidth: ", pageWidth);
+    console.log("totalWidthAllCards: ", totalWidthAllCards);
 
     setState(pageWidth >= totalWidthAllCards);
   }
