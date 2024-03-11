@@ -36,33 +36,29 @@ export default function RecenzieSwiper({ data }) {
     return () => window.removeEventListener("resize", handleOverflowSlider);
   }, []);
   return (
-    <>
-      (
-      <Swiper
-        ref={swiperContainerRef}
-        slidesPerView={"auto"}
-        mousewheel={{ releaseOnEdges: true }}
-        spaceBetween={16}
-        modules={[Mousewheel]}
-        className={cn(s.swiperContainer, { [s.center]: sliderIsCenter })}
-      >
-        {data &&
-          data.map((data, index) => {
-            console.log(index);
-            return (
-              <SwiperSlide
-                key={index}
-                className={s.swiperSlide}
-              >
-                <RecenzieCard
-                  data={data}
-                  index={index}
-                />
-              </SwiperSlide>
-            );
-          })}
-      </Swiper>
-      )
-    </>
+    <Swiper
+      ref={swiperContainerRef}
+      slidesPerView={"auto"}
+      mousewheel={{ releaseOnEdges: true }}
+      spaceBetween={16}
+      modules={[Mousewheel]}
+      className={cn(s.swiperContainer, { [s.center]: sliderIsCenter })}
+    >
+      {data &&
+        data.map((data, index) => {
+          console.log(index);
+          return (
+            <SwiperSlide
+              key={index}
+              className={s.swiperSlide}
+            >
+              <RecenzieCard
+                data={data}
+                index={index}
+              />
+            </SwiperSlide>
+          );
+        })}
+    </Swiper>
   );
 }
