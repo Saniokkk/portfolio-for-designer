@@ -14,6 +14,7 @@ import { instrumentSerif } from "@/app/fonts";
 
 export const About = ({ data, mainTitle }) => {
   const { description, images } = data;
+  console.log("images[3]", images[3]);
   return (
     <section className={s.about}>
       <div className={s.topSideWrapper}>
