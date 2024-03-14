@@ -1,0 +1,73 @@
+.section {
+    padding: 140px 0;
+    background-image: url(../../public/projects/bg-tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right 60%;
+    scroll-margin-block-start: -100px;
+
+
+    @media screen and (min-width: 768px) {
+        margin-top: -300px;
+        padding: 480px 0;
+        background-image: url(../../public/projects/bg-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top -300px;
+        scroll-margin-block-start: -450px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-top: 0;
+        padding: 200px 0;
+        background-image: url(../../public/hero-bg-desc.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 10% top -300px;
+        scroll-margin-block-start: -180px;
+    }
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    margin-bottom: 120px;
+
+    @media screen and (min-width: 768px) {
+        row-gap: 80px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 136px;
+        column-gap: 144px;
+    }
+}
+
+p.description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--white);
+
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 32px;
+        max-width: 928px;
+        margin: 0 auto;
+    }
+}
+
+.accentText {
+    color: var(--grey);
+}

@@ -1,13 +1,13 @@
-import { Services, Hero, Recenzie, Projects, About } from "./components";
+import { Services, Hero, Recenzie, Projects, About } from "../components";
 
-export default function Home() {
+export default function Page() {
     return (
-        <main>
+        <>
             <Hero />
             <About />
             <Projects />
             <Services />
             <Recenzie />
-        </main>
+        </>
     );
 }

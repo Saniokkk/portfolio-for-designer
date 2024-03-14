@@ -123,6 +123,34 @@ export const projectData = [
   {
     id: 1,
     hero: {
+      mainTitle: "ManaBay",
+      year: 2024,
+      projectType: "UI/UX Design, E-commerce",
+      urlImage: manabayHeroMainImage,
+      descriptionAboutCompony:
+        "The flower shop manabay opened its doors in 2023, offering unique floral compositions and services. Their story began with a deep love for flowers and a desire to share this beauty with others. They are committed to ensuring that every customer finds not only a floral bouquet but also a piece of happiness and joy with them. Their mission is to create not only beautiful compositions but also a sense of uniqueness and individuality for each customer. They strive to make every event unforgettable and expressive, turning each moment into a unique masterpiece of floral art. ",
+    },
+    about: {
+      description:
+        "ManaBay is a platform for buying, selling, and auctioning 'Magic: The Gathering' cards. Users can browse, purchase, sell, or participate in auctions on the site. With a wide selection of cards, including rare and unique specimens, ManaBay is the perfect destination for collectors and MTG players alike. Additionally, the site offers accessories such as projectors, stands, and albums to enhance your gaming experience.",
+      images: [
+        manabayFirstImgTask,
+        manabaySecondImgTask,
+        manabayPreviewLargeImgTask,
+        manabayPreviewSmallImgTask,
+      ],
+    },
+    result: {
+      firstImgResult: manabayFirstImgResult,
+      secondImgResult: manabaySecondImgResult,
+      previewImgResult: manabayPreviewImgResult,
+      description:
+        "My main goal was to create a design that meets users' needs to the fullest extent and stands out from competitors through careful niche exploration. This involved a thorough analysis of user experience, their expectations, and needs. My work also entailed creating an adaptive design that optimizes for any device. I was also responsible for establishing a design system with reusable components, primary colors, and fonts to ensure consistency and efficiency in development and implementation.",
+    },
+  },
+  {
+    id: 2,
+    hero: {
       mainTitle: "SMME",
       year: 2023,
       projectType: "UI/UX Design, Multipage site",
@@ -148,7 +176,7 @@ export const projectData = [
     },
   },
   {
-    id: 2,
+    id: 3,
     hero: {
       mainTitle: "Teklight",
       year: 2023,
@@ -175,7 +203,7 @@ export const projectData = [
     },
   },
   {
-    id: 3,
+    id: 4,
     hero: {
       mainTitle: "Kvitkarnia",
       year: 2023,
@@ -202,59 +230,31 @@ export const projectData = [
         "As a result of the work, a detailed analysis of competitors was conducted, allowing us to gain insights into current market trends and identify areas for differentiation. Based on this analysis, three distinct stylistic approaches were proposed to clients, each of which emphasized the values of the company. These proposals aimed to replicate the essence of 'Kvitkarnia', while offering diversity and appeal to a varied audience. The outcome was an attractive website, with a focus on the store's compositions, enhancing the visual experience for visitors.",
     },
   },
-  {
-    id: 4,
-    hero: {
-      mainTitle: "ManaBay",
-      year: 2024,
-      projectType: "UI/UX Design, E-commerce",
-      urlImage: manabayHeroMainImage,
-      descriptionAboutCompony:
-        "The flower shop manabay opened its doors in 2023, offering unique floral compositions and services. Their story began with a deep love for flowers and a desire to share this beauty with others. They are committed to ensuring that every customer finds not only a floral bouquet but also a piece of happiness and joy with them. Their mission is to create not only beautiful compositions but also a sense of uniqueness and individuality for each customer. They strive to make every event unforgettable and expressive, turning each moment into a unique masterpiece of floral art. ",
-    },
-    about: {
-      description:
-        "ManaBay is a platform for buying, selling, and auctioning 'Magic: The Gathering' cards. Users can browse, purchase, sell, or participate in auctions on the site. With a wide selection of cards, including rare and unique specimens, ManaBay is the perfect destination for collectors and MTG players alike. Additionally, the site offers accessories such as projectors, stands, and albums to enhance your gaming experience.",
-      images: [
-        manabayFirstImgTask,
-        manabaySecondImgTask,
-        manabayPreviewLargeImgTask,
-        manabayPreviewSmallImgTask,
-      ],
-    },
-    result: {
-      firstImgResult: manabayFirstImgResult,
-      secondImgResult: manabaySecondImgResult,
-      previewImgResult: manabayPreviewImgResult,
-      description:
-        "My main goal was to create a design that meets users' needs to the fullest extent and stands out from competitors through careful niche exploration. This involved a thorough analysis of user experience, their expectations, and needs. My work also entailed creating an adaptive design that optimizes for any device. I was also responsible for establishing a design system with reusable components, primary colors, and fonts to ensure consistency and efficiency in development and implementation.",
-    },
-  },
 ];
 
 export const projects = [
   {
     id: 1,
+    srcImg: manabayImg,
+    name: "ManaBay",
+    description: "UI/UX Design, E-commerce",
+  },
+  {
+    id: 2,
     srcImg: smmImg,
     name: "SMME",
     description: "UI/UX Design, Multipage site",
   },
   {
-    id: 2,
+    id: 3,
     srcImg: techlightImg,
     name: "Techlight ",
     description: "UI/UX Design, E-commerce",
   },
   {
-    id: 3,
+    id: 4,
     srcImg: kvitkarniaImg,
     name: "Kvitkarnia",
     description: "UI/UX Design, Multipage site",
-  },
-  {
-    id: 4,
-    srcImg: manabayImg,
-    name: "ManaBay",
-    description: "UI/UX Design, E-commerce",
   },
 ];
