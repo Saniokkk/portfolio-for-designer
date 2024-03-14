@@ -80,10 +80,6 @@
 .image {
     border-radius: 10px;
 
-    @media screen and (max-width: 767px) {
-        outline: 1px solid grey;
-    }
-
     &:first-child {
         width: 296px;
         height: 218px;
