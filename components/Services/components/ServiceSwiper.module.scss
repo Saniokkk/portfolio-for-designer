@@ -1,0 +1,31 @@
+div.swiperContainer {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 0 96px;
+    }
+}
+
+.center {
+    &>div {
+        justify-content: center;
+    }
+}
+
+
+div.swiperSlide {
+    display: flex;
+    width: 319px;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 365px;
+    }
+
+    @media screen and (min-width: 1440px) {}
+}

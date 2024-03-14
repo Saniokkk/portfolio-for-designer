@@ -24,13 +24,12 @@
         margin-bottom: 50px;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: flex-end;
-        column-gap: 100px;
+        justify-content: space-between;
+        gap: 100px;
     }
 
     @media screen and (min-width: 1440px) {
         margin-bottom: 70px;
-        column-gap: 442px;
     }
 }
 
@@ -72,14 +71,14 @@
     }
 }
 
-.mainTitle {
+h1.mainTitle {
     font-weight: 400;
     font-size: 80px;
     line-height: 1.6;
     text-transform: uppercase;
 
     @media screen and (min-width: 1440px) {
-        font-style: 140px;
+        font-size: 140px;
     }
 }
 

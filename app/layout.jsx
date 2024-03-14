@@ -1,6 +1,6 @@
 import { instrumentSans } from "./fonts";
 import "./globals.css";
-import { Footer, Header } from "./components";
+import { Footer, Header } from "../components";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
