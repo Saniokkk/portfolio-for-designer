@@ -53,7 +53,7 @@ import teklightHeroMainImage from "@/public/projects/teklight/hero/hero-desktop.
 import teklightFirstImgTask from "@/public/projects/teklight/task/first-desk.webp";
 import teklightSecondImgTask from "@/public/projects/teklight/task/second-desk.webp";
 import teklightPreviewLargeImgTask from "@/public/projects/teklight/task/preview-large.webp";
-import teklightPreviewSmallImgTask from "@/public/projects/teklight/task/preview-small.webp";
+import teklightPreviewSmallImgTask from "@/public/projects/teklight/task/preview-small.jpg";
 
 //result
 import teklightFirstImgResult from "@/public/projects/teklight/result/desk-1.webp";
