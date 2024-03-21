@@ -135,8 +135,7 @@
 
 .imagePreview {
     width: calc((100% - 15px) / 2);
-    // height: auto;
-    border-radius: 24px;
+    border-radius: 8px;
 
     &:nth-child(2) {
         height: 574px;
@@ -148,6 +147,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        border-radius: 20px;
         &:nth-child(2) {
             height: 1199px;
         }
@@ -159,6 +159,7 @@
     }
 
     @media screen and (min-width: 1440px) {
+        border-radius: 24px;
         &:nth-child(2) {
             height: 1982px;
         }
