@@ -30,7 +30,7 @@ body {
   color: var(--primary);
   font-weight: 400;
   background: var(--main-bg);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 a {

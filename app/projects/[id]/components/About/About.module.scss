@@ -37,9 +37,6 @@
 .image {
     border-radius: 10px;
 
-    @media screen and (max-width: 767px) {
-    }
-
     &:first-child {
         width: 296px;
         height: 218px;
@@ -138,8 +135,7 @@
 
 .imagePreview {
     width: calc((100% - 15px) / 2);
-    // height: auto;
-    border-radius: 20px;
+    border-radius: 8px;
 
     &:nth-child(2) {
         height: 574px;
@@ -151,6 +147,7 @@
     }
 
     @media screen and (min-width: 768px) {
+        border-radius: 20px;
         &:nth-child(2) {
             height: 1199px;
         }
@@ -162,6 +159,7 @@
     }
 
     @media screen and (min-width: 1440px) {
+        border-radius: 24px;
         &:nth-child(2) {
             height: 1982px;
         }
