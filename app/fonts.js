@@ -1,5 +1,4 @@
-import { Instrument_Serif, Instrument_Sans, Open_Sans } from "next/font/google";
-
+import localFont from "next/font/local";
 // Instrument Sans Regular      400   main
 // Instrument Sans Medium       500
 // Instrument Sans SemiBold     600
@@ -8,25 +7,46 @@ import { Instrument_Serif, Instrument_Sans, Open_Sans } from "next/font/google";
 // Open Sans Regular            400
 // Open Sans SemiBold           600
 
-
-
-export const instrumentSans = Instrument_Sans({
-  weight: ["400", "500", "600"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
+export const instrumentSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/instrument-sans-400.woff2",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/instrument-sans-500.woff2",
+      weight: "500",
+    },
+    {
+      path: "../public/fonts/instrument-sans-600.woff2",
+      weight: "600",
+    },
+  ],
 });
 
-export const instrumentSerif = Instrument_Serif({
-  weight: ["400"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
+export const instrumentSerif = localFont({
+  src: [
+    {
+      path: "../public/fonts/instrument-serif-400.woff2",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/instrument-serif-400-italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+  ],
 });
 
-export const openSans = Open_Sans({
-  weight: ["400", "600"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
+export const openSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/open-sans-400.woff2",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/open-sans-600.woff2",
+      weight: "600",
+    },
+  ],
 });
