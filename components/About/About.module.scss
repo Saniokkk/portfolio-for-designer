@@ -1,7 +1,7 @@
 .about {
     margin-top: -166px;
     padding-bottom: 140px;
-        scroll-margin-block-start: 40px;
+    scroll-margin-block-start: 40px;
 
     @media screen and (min-width: 768px) {
         margin-top: -1070px;
@@ -31,8 +31,7 @@
         margin-bottom: 24px;
     }
 
-    @media screen and (min-width: 1440px) {
-    }
+    @media screen and (min-width: 1440px) {}
 }
 
 .preTitle {
@@ -48,26 +47,28 @@
 }
 
 .image {
+    position: relative;
+    overflow: hidden;
     width: 344px;
     height: 197px;
     margin-bottom: 40px;
-    transform: rotate(-11.285deg);
+    transform: rotate(-15.19deg);
 
     border-radius: 200px/120px;
-    background-image: url("../../public/about-mob.webp");
+    // background-image: url("../../public/about-mob.webp");
     background-size: cover;
 
-     -moz-border-radius: 200px/120px;
+    -moz-border-radius: 200px/120px;
     -webkit-border-radius: 200px/120px;
 
     @media screen and (min-width: 768px) {
         width: 718px;
         height: 358px;
-        transform: rotate(-12.911deg);
+        transform: rotate(-13.11deg);
         margin-bottom: 70px;
 
         border-radius: 345px/182px;
-        background-image: url("../../public/about-tablet.webp");
+        // background-image: url("../../public/about-tablet.webp");
 
         -moz-border-radius: 345px/182px;
         -webkit-border-radius: 345px/182px;
@@ -77,14 +78,50 @@
         width: 946px;
         height: 472px;
         margin-bottom: 100px;
-        transform: rotate(-12.911deg);
+        // transform: rotate(-12.911deg);
 
         border-radius: 460px/240px;
-        background-image: url("../../public/about-desc.webp");
+        // background-image: url("../../public/about-desc.webp");
 
         -moz-border-radius: 455px/240px;
         -webkit-border-radius: 455px/240px;
     }
+}
+
+.image::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    left: -24px;
+    width: 336px;
+    height: 428px;
+    background-image: url("../../public/about-mob2.jpg");
+    // background-size: 385px 351px;
+    background-size: contain;
+    transform: rotate(15.19deg);
+
+    @media screen and (min-width: 768px) {
+        top: -18px;
+        left: -10px;
+        width: 717px;
+        height: 456px;
+        transform: rotate(12.911deg);
+        background-image: url("../../public/about-tablet2.jpg");
+        background-size: contain;
+
+
+    }
+
+    @media screen and (min-width: 1440px) {
+        top: -24px;
+        left: -15px;
+        // background-size: 944px 600px;
+        width: 944px;
+        height: 600px;
+        background-image: url("../../public/about-desc2.jpg");
+    }
+
 }
 
 .text {
@@ -104,7 +141,7 @@
 .space {
     display: inline;
 
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: block;
         margin-bottom: 20px;
     }
