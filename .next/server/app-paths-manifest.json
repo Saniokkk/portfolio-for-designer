@@ -1,8 +1,5 @@
 {
-  "/_not-found": "app/_not-found.js",
   "/page": "app/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/projects/[id]/page": "app/projects/[id]/page.js"
+  "/projects/[id]/page": "app/projects/[id]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
